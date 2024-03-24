@@ -49,26 +49,19 @@ public class Main {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему пора ходить на работу");
         }
         // Задача 5
-        int babyAge = 14;
-        int escortAge = 18;
-        // Добавил условие, чтобы еще определять возраст сопровождающего
+        int babyAge = 4;
         if (babyAge < 5) {
             System.out.println("Если возраст ребенка равен " + babyAge +
                     ", то ему нельзя кататься на аттракционе");
-        } else if (babyAge >= 5 && babyAge < 14 && escortAge < 18) {
+        } else if (babyAge >= 5 && babyAge < 14) {
             System.out.println("Если возраст ребенка равен " + babyAge +
                     ", то, чтобы ему кататься, нужен взрослый старше 18 лет для сопровождения!");
-        } else if (babyAge >= 5 && babyAge < 14 && escortAge >= 18) {
-            System.out.println("Если возраст ребенка равен " + babyAge +
-                    ", то он может кататься только в сопровождении взрослого, которому " + escortAge + " лет");
         } else {
             System.out.println("Если возраст ребенка равен " + babyAge +
                     ", то он может кататься без сопровождения взрослого");
         }
         // Задача 6
-        // Инициализируем количество пассажиров
         int passengers = 103;
-        // Решение
         int capacity = 102;
         int seats = 60;
         int standing = capacity - seats;
@@ -87,23 +80,15 @@ public class Main {
                     "то вагон переполнен!");
         }
         // Задача 7
-        int one = 50;
-        int two = 20;
-        int three = 51;
-        // Добавил дополнительное условие при равенстве бОльших значений
-        if (one > two && one > three && one != two && one != three) {
+        int one = 60;
+        int two = 80;
+        int three = 50;
+        if (one >= two && one >= three) {
             System.out.println("Значение " + one + " больше значения " + two + " и значения " + three);
-        } else if (two > one && two > three && two != one && two != three) {
+        } else if (two >= one && two >= three) {
             System.out.println("Значение " + two + " больше значения " + one + " и значения " + three);
-        } else if (three > one && three > two && three != one && three != two) {
+        } else if (three >= one && three >= two) {
             System.out.println("Значение " + three + " больше значения " + one + " и значения " + two);
-        } else {
-            System.out.println("Попробуй другие числа, невозможно определить бОльшее число");
         }
-
-        //У меня вопрос: почему среда подчеркивает мне постоянно желтым?
-        //Это просто подсказка среды и можно не обращать внимание?
-        //Или я что-то делаю не так и она указывает мне на ошибки?
-        //Спасибо
     }
 }
